@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Pilots Statistics</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
     <script src="Scripts/jquery-3.6.0.min.js"></script>
@@ -171,25 +171,13 @@ border-color: #ddd;
                         </div>
                             <div class="card-body">
                                 <div class="row mt-2">
-                                    <div class="col-12">
+                                    <div class="col-sm-12 col-md-12 col-lg-12">
+                                        <div style="overflow-x:auto">
                                 <asp:GridView ID="GridView1" runat="server" CssClass="table table-bordered table-hover table-responsive-md table-responsive mytable small"
                                      AllowPaging="false" PagerSettings-Mode="NumericFirstLast" PageSize="15"
                                     PagerSettings-Position="TopAndBottom" PagerStyle-HorizontalAlign="Right"
-                                    HeaderStyle-CssClass=" bg-light bg-opacity-75 text-white text"  AutoGenerateColumns="false" AllowSorting="true"  >
+                                    HeaderStyle-CssClass="bg-light bg-opacity-75 text-white text"  AutoGenerateColumns="false" AllowSorting="true"  >
                                     <Columns>
-<%--                                        <asp:TemplateField ItemStyle-CssClass="text-center small">
-                                            <ItemTemplate>
-                                                <asp:LinkButton ID="DeletePilot" ToolTip="Delete callsign " CommandName="DeletePilot" 
-                                                    OnClientClick="return confirm('Are you sure to delete this callsign from the pilot club?');" 
-
-                                                    CommandArgument='<%# Eval("ID") %>' runat="server"><i class="fa fa-trash-can text-danger"></i></asp:LinkButton>
-                                            </ItemTemplate>
-                                        </asp:TemplateField>
-                                        <asp:TemplateField ItemStyle-CssClass="text-center small">
-                                            <ItemTemplate>
-                                                <asp:LinkButton ID="EditPilot" ToolTip="Edit Pilot Information" CommandArgument='<%# Eval("ID") %>' runat="server" CommandName="EditPilot"><i class="fa fa-edit"></i></asp:LinkButton>
-                                            </ItemTemplate>
-                                        </asp:TemplateField>--%>
                                         <asp:BoundField DataField="CALLSIGN" SortExpression="CALLSIGN" HeaderText="CALLSIGN" HeaderStyle-CssClass="text-center font-logo-color " />
                                         <asp:BoundField DataField="FULL NAME" SortExpression="[FULL NAME]" HeaderText="FULL NAME" HeaderStyle-CssClass="text-center" itemstyle-cssclass=" text-uppercase" />
                                         <asp:BoundField DataField="VATSIM ID" SortExpression="[VATSIM ID]" HeaderText="VATSIM ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" />
@@ -199,7 +187,7 @@ border-color: #ddd;
                                         <asp:BoundField DataField="DISCORD" SortExpression="[DISCORD]" HeaderText="DISCORD ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center"  />
                                     </Columns>
                                 </asp:GridView>
-
+</div>
                                     </div>
                                 </div>
                                    <hr class="mt-1 mb-1" />                             

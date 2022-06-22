@@ -57,16 +57,21 @@
 <body>
     <form id="form1" runat="server">
         <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <ContentTemplate>
+                <div class="container-fluid ">
+                    <div class="row">
+                        <div class="col-12">
+                          <div style="width:100%; margin-top:10px; height:97vh; float:left">
+                            <div id="myMap" style="position:relative;width:100%;height:100%;"></div>
+                          </div>
+                        </div>
+                    </div>
+               </div>
+            </ContentTemplate>
+        </asp:UpdatePanel>
         <asp:Button ID="Button1" runat="server" Text="Button" />
-        <div class="container-fluid ">
-            <div class="row">
-                <div class="col-12">
-                  <div style="width:100%; margin-top:10px; height:97vh; float:left">
-                    <div id="myMap" style="position:relative;width:100%;height:100%;"></div>               </script>
-                  </div>
-                </div>
-            </div>
-       </div>
+
 
     </form>
 </body>
