@@ -35,13 +35,10 @@
                     <div class="col-sm-10 col-md-8 col-lg-8">
                     <div class="card shadow-lg rounded-3">
                         <div class="card-header text-center logo-color text-white">
-                            
+                            <h5>The Pilot Club</h5>
                         </div>
                         <div class="card-body">
-
-                        </div>
-                        <div class="card-footer">
-
+                            <p class="text-center">Thank you for connecting your VATSIM account with your Discord account.You can now use the <strong>/sync</strong> command in our discord to get your roles!</p>
                         </div>
                     </div>
                     </div>
