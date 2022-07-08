@@ -184,7 +184,7 @@ border-color: #ddd;
                                         <asp:BoundField DataField="PILOT HRS" SortExpression="[PILOT HRS]" HeaderText="PILOT HRS" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-end" DataFormatString="{0:N2}" />
                                         <asp:BoundField DataField="ATC HRS" SortExpression="[ATC HRS]" HeaderText="ATC HRS" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-end" DataFormatString="{0:N2}" />
                                         <asp:BoundField DataField="TTL HRS" SortExpression="[TTL HRS]" HeaderText="TTL HRS" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-end" DataFormatString="{0:N2}" />
-                                        <asp:BoundField DataField="DISCORD" SortExpression="[DISCORD]" HeaderText="DISCORD ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center"  />
+                                        <asp:BoundField DataField="DISCORD" SortExpression="[DISCORD]" HeaderText="DISCORD ID" HeaderStyle-CssClass="text-center" ItemStyle-CssClass="text-center" Visible="false"  />
                                     </Columns>
                                 </asp:GridView>
 </div>
